@@ -1,0 +1,14 @@
+C:\Users\admin\source\repos\SimpleMethod\SimpleMethod\bin\Debug\netcoreapp3.1\SimpleMethod.exe
+C:\Users\admin\source\repos\SimpleMethod\SimpleMethod\bin\Debug\netcoreapp3.1\SimpleMethod.deps.json
+C:\Users\admin\source\repos\SimpleMethod\SimpleMethod\bin\Debug\netcoreapp3.1\SimpleMethod.runtimeconfig.json
+C:\Users\admin\source\repos\SimpleMethod\SimpleMethod\bin\Debug\netcoreapp3.1\SimpleMethod.runtimeconfig.dev.json
+C:\Users\admin\source\repos\SimpleMethod\SimpleMethod\bin\Debug\netcoreapp3.1\SimpleMethod.dll
+C:\Users\admin\source\repos\SimpleMethod\SimpleMethod\bin\Debug\netcoreapp3.1\SimpleMethod.pdb
+C:\Users\admin\source\repos\SimpleMethod\SimpleMethod\obj\Debug\netcoreapp3.1\SimpleMethod.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\SimpleMethod\SimpleMethod\obj\Debug\netcoreapp3.1\SimpleMethod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\SimpleMethod\SimpleMethod\obj\Debug\netcoreapp3.1\SimpleMethod.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\SimpleMethod\SimpleMethod\obj\Debug\netcoreapp3.1\SimpleMethod.AssemblyInfo.cs
+C:\Users\admin\source\repos\SimpleMethod\SimpleMethod\obj\Debug\netcoreapp3.1\SimpleMethod.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\SimpleMethod\SimpleMethod\obj\Debug\netcoreapp3.1\SimpleMethod.dll
+C:\Users\admin\source\repos\SimpleMethod\SimpleMethod\obj\Debug\netcoreapp3.1\SimpleMethod.pdb
+C:\Users\admin\source\repos\SimpleMethod\SimpleMethod\obj\Debug\netcoreapp3.1\SimpleMethod.genruntimeconfig.cache
