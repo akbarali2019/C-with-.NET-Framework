@@ -1,0 +1,14 @@
+C:\Users\admin\source\repos\NewHelloWorld\NewHelloWorld\bin\Debug\netcoreapp3.1\NewHelloWorld.exe
+C:\Users\admin\source\repos\NewHelloWorld\NewHelloWorld\bin\Debug\netcoreapp3.1\NewHelloWorld.deps.json
+C:\Users\admin\source\repos\NewHelloWorld\NewHelloWorld\bin\Debug\netcoreapp3.1\NewHelloWorld.runtimeconfig.json
+C:\Users\admin\source\repos\NewHelloWorld\NewHelloWorld\bin\Debug\netcoreapp3.1\NewHelloWorld.runtimeconfig.dev.json
+C:\Users\admin\source\repos\NewHelloWorld\NewHelloWorld\bin\Debug\netcoreapp3.1\NewHelloWorld.dll
+C:\Users\admin\source\repos\NewHelloWorld\NewHelloWorld\bin\Debug\netcoreapp3.1\NewHelloWorld.pdb
+C:\Users\admin\source\repos\NewHelloWorld\NewHelloWorld\obj\Debug\netcoreapp3.1\NewHelloWorld.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\NewHelloWorld\NewHelloWorld\obj\Debug\netcoreapp3.1\NewHelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\NewHelloWorld\NewHelloWorld\obj\Debug\netcoreapp3.1\NewHelloWorld.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\NewHelloWorld\NewHelloWorld\obj\Debug\netcoreapp3.1\NewHelloWorld.AssemblyInfo.cs
+C:\Users\admin\source\repos\NewHelloWorld\NewHelloWorld\obj\Debug\netcoreapp3.1\NewHelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\NewHelloWorld\NewHelloWorld\obj\Debug\netcoreapp3.1\NewHelloWorld.dll
+C:\Users\admin\source\repos\NewHelloWorld\NewHelloWorld\obj\Debug\netcoreapp3.1\NewHelloWorld.pdb
+C:\Users\admin\source\repos\NewHelloWorld\NewHelloWorld\obj\Debug\netcoreapp3.1\NewHelloWorld.genruntimeconfig.cache
