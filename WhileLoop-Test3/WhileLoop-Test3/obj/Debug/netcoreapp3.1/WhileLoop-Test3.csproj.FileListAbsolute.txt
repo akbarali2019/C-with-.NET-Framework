@@ -1,0 +1,14 @@
+C:\Users\admin\source\repos\WhileLoop-Test3\WhileLoop-Test3\bin\Debug\netcoreapp3.1\WhileLoop-Test3.exe
+C:\Users\admin\source\repos\WhileLoop-Test3\WhileLoop-Test3\bin\Debug\netcoreapp3.1\WhileLoop-Test3.deps.json
+C:\Users\admin\source\repos\WhileLoop-Test3\WhileLoop-Test3\bin\Debug\netcoreapp3.1\WhileLoop-Test3.runtimeconfig.json
+C:\Users\admin\source\repos\WhileLoop-Test3\WhileLoop-Test3\bin\Debug\netcoreapp3.1\WhileLoop-Test3.runtimeconfig.dev.json
+C:\Users\admin\source\repos\WhileLoop-Test3\WhileLoop-Test3\bin\Debug\netcoreapp3.1\WhileLoop-Test3.dll
+C:\Users\admin\source\repos\WhileLoop-Test3\WhileLoop-Test3\bin\Debug\netcoreapp3.1\WhileLoop-Test3.pdb
+C:\Users\admin\source\repos\WhileLoop-Test3\WhileLoop-Test3\obj\Debug\netcoreapp3.1\WhileLoop-Test3.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\WhileLoop-Test3\WhileLoop-Test3\obj\Debug\netcoreapp3.1\WhileLoop-Test3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\WhileLoop-Test3\WhileLoop-Test3\obj\Debug\netcoreapp3.1\WhileLoop-Test3.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\WhileLoop-Test3\WhileLoop-Test3\obj\Debug\netcoreapp3.1\WhileLoop-Test3.AssemblyInfo.cs
+C:\Users\admin\source\repos\WhileLoop-Test3\WhileLoop-Test3\obj\Debug\netcoreapp3.1\WhileLoop-Test3.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\WhileLoop-Test3\WhileLoop-Test3\obj\Debug\netcoreapp3.1\WhileLoop-Test3.dll
+C:\Users\admin\source\repos\WhileLoop-Test3\WhileLoop-Test3\obj\Debug\netcoreapp3.1\WhileLoop-Test3.pdb
+C:\Users\admin\source\repos\WhileLoop-Test3\WhileLoop-Test3\obj\Debug\netcoreapp3.1\WhileLoop-Test3.genruntimeconfig.cache

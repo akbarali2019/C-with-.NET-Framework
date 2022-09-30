@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "WhileLoop-Test3/1.0.0": {
+        "runtime": {
+          "WhileLoop-Test3.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WhileLoop-Test3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
