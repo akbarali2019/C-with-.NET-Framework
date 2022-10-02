@@ -1,0 +1,14 @@
+C:\Users\admin\source\repos\DatesAndTimes\DatesAndTimes\obj\Debug\netcoreapp3.1\DatesAndTimes.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\DatesAndTimes\DatesAndTimes\obj\Debug\netcoreapp3.1\DatesAndTimes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\DatesAndTimes\DatesAndTimes\obj\Debug\netcoreapp3.1\DatesAndTimes.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\DatesAndTimes\DatesAndTimes\obj\Debug\netcoreapp3.1\DatesAndTimes.AssemblyInfo.cs
+C:\Users\admin\source\repos\DatesAndTimes\DatesAndTimes\obj\Debug\netcoreapp3.1\DatesAndTimes.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\DatesAndTimes\DatesAndTimes\bin\Debug\netcoreapp3.1\DatesAndTimes.exe
+C:\Users\admin\source\repos\DatesAndTimes\DatesAndTimes\bin\Debug\netcoreapp3.1\DatesAndTimes.deps.json
+C:\Users\admin\source\repos\DatesAndTimes\DatesAndTimes\bin\Debug\netcoreapp3.1\DatesAndTimes.runtimeconfig.json
+C:\Users\admin\source\repos\DatesAndTimes\DatesAndTimes\bin\Debug\netcoreapp3.1\DatesAndTimes.runtimeconfig.dev.json
+C:\Users\admin\source\repos\DatesAndTimes\DatesAndTimes\bin\Debug\netcoreapp3.1\DatesAndTimes.dll
+C:\Users\admin\source\repos\DatesAndTimes\DatesAndTimes\bin\Debug\netcoreapp3.1\DatesAndTimes.pdb
+C:\Users\admin\source\repos\DatesAndTimes\DatesAndTimes\obj\Debug\netcoreapp3.1\DatesAndTimes.dll
+C:\Users\admin\source\repos\DatesAndTimes\DatesAndTimes\obj\Debug\netcoreapp3.1\DatesAndTimes.pdb
+C:\Users\admin\source\repos\DatesAndTimes\DatesAndTimes\obj\Debug\netcoreapp3.1\DatesAndTimes.genruntimeconfig.cache
