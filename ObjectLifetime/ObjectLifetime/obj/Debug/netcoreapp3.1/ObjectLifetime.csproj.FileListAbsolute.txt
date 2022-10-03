@@ -1,0 +1,14 @@
+C:\Users\admin\source\repos\ObjectLifetime\ObjectLifetime\bin\Debug\netcoreapp3.1\ObjectLifetime.exe
+C:\Users\admin\source\repos\ObjectLifetime\ObjectLifetime\bin\Debug\netcoreapp3.1\ObjectLifetime.deps.json
+C:\Users\admin\source\repos\ObjectLifetime\ObjectLifetime\bin\Debug\netcoreapp3.1\ObjectLifetime.runtimeconfig.json
+C:\Users\admin\source\repos\ObjectLifetime\ObjectLifetime\bin\Debug\netcoreapp3.1\ObjectLifetime.runtimeconfig.dev.json
+C:\Users\admin\source\repos\ObjectLifetime\ObjectLifetime\bin\Debug\netcoreapp3.1\ObjectLifetime.dll
+C:\Users\admin\source\repos\ObjectLifetime\ObjectLifetime\bin\Debug\netcoreapp3.1\ObjectLifetime.pdb
+C:\Users\admin\source\repos\ObjectLifetime\ObjectLifetime\obj\Debug\netcoreapp3.1\ObjectLifetime.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\ObjectLifetime\ObjectLifetime\obj\Debug\netcoreapp3.1\ObjectLifetime.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\ObjectLifetime\ObjectLifetime\obj\Debug\netcoreapp3.1\ObjectLifetime.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\ObjectLifetime\ObjectLifetime\obj\Debug\netcoreapp3.1\ObjectLifetime.AssemblyInfo.cs
+C:\Users\admin\source\repos\ObjectLifetime\ObjectLifetime\obj\Debug\netcoreapp3.1\ObjectLifetime.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\ObjectLifetime\ObjectLifetime\obj\Debug\netcoreapp3.1\ObjectLifetime.dll
+C:\Users\admin\source\repos\ObjectLifetime\ObjectLifetime\obj\Debug\netcoreapp3.1\ObjectLifetime.pdb
+C:\Users\admin\source\repos\ObjectLifetime\ObjectLifetime\obj\Debug\netcoreapp3.1\ObjectLifetime.genruntimeconfig.cache
