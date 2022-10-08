@@ -1,0 +1,14 @@
+C:\Users\admin\source\repos\EventHandlingTimerExample\EventHandlingTimerExample\bin\Debug\netcoreapp3.1\EventHandlingTimerExample.exe
+C:\Users\admin\source\repos\EventHandlingTimerExample\EventHandlingTimerExample\bin\Debug\netcoreapp3.1\EventHandlingTimerExample.deps.json
+C:\Users\admin\source\repos\EventHandlingTimerExample\EventHandlingTimerExample\bin\Debug\netcoreapp3.1\EventHandlingTimerExample.runtimeconfig.json
+C:\Users\admin\source\repos\EventHandlingTimerExample\EventHandlingTimerExample\bin\Debug\netcoreapp3.1\EventHandlingTimerExample.runtimeconfig.dev.json
+C:\Users\admin\source\repos\EventHandlingTimerExample\EventHandlingTimerExample\bin\Debug\netcoreapp3.1\EventHandlingTimerExample.dll
+C:\Users\admin\source\repos\EventHandlingTimerExample\EventHandlingTimerExample\bin\Debug\netcoreapp3.1\EventHandlingTimerExample.pdb
+C:\Users\admin\source\repos\EventHandlingTimerExample\EventHandlingTimerExample\obj\Debug\netcoreapp3.1\EventHandlingTimerExample.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\EventHandlingTimerExample\EventHandlingTimerExample\obj\Debug\netcoreapp3.1\EventHandlingTimerExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\EventHandlingTimerExample\EventHandlingTimerExample\obj\Debug\netcoreapp3.1\EventHandlingTimerExample.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\EventHandlingTimerExample\EventHandlingTimerExample\obj\Debug\netcoreapp3.1\EventHandlingTimerExample.AssemblyInfo.cs
+C:\Users\admin\source\repos\EventHandlingTimerExample\EventHandlingTimerExample\obj\Debug\netcoreapp3.1\EventHandlingTimerExample.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\EventHandlingTimerExample\EventHandlingTimerExample\obj\Debug\netcoreapp3.1\EventHandlingTimerExample.dll
+C:\Users\admin\source\repos\EventHandlingTimerExample\EventHandlingTimerExample\obj\Debug\netcoreapp3.1\EventHandlingTimerExample.pdb
+C:\Users\admin\source\repos\EventHandlingTimerExample\EventHandlingTimerExample\obj\Debug\netcoreapp3.1\EventHandlingTimerExample.genruntimeconfig.cache
