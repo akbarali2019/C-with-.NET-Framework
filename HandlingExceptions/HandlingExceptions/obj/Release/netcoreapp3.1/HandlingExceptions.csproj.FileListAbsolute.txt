@@ -1,0 +1,13 @@
+C:\Users\admin\source\repos\HandlingExceptions\HandlingExceptions\bin\Release\netcoreapp3.1\HandlingExceptions.exe
+C:\Users\admin\source\repos\HandlingExceptions\HandlingExceptions\bin\Release\netcoreapp3.1\HandlingExceptions.deps.json
+C:\Users\admin\source\repos\HandlingExceptions\HandlingExceptions\bin\Release\netcoreapp3.1\HandlingExceptions.runtimeconfig.json
+C:\Users\admin\source\repos\HandlingExceptions\HandlingExceptions\bin\Release\netcoreapp3.1\HandlingExceptions.runtimeconfig.dev.json
+C:\Users\admin\source\repos\HandlingExceptions\HandlingExceptions\bin\Release\netcoreapp3.1\HandlingExceptions.dll
+C:\Users\admin\source\repos\HandlingExceptions\HandlingExceptions\bin\Release\netcoreapp3.1\HandlingExceptions.pdb
+C:\Users\admin\source\repos\HandlingExceptions\HandlingExceptions\obj\Release\netcoreapp3.1\HandlingExceptions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\HandlingExceptions\HandlingExceptions\obj\Release\netcoreapp3.1\HandlingExceptions.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\HandlingExceptions\HandlingExceptions\obj\Release\netcoreapp3.1\HandlingExceptions.AssemblyInfo.cs
+C:\Users\admin\source\repos\HandlingExceptions\HandlingExceptions\obj\Release\netcoreapp3.1\HandlingExceptions.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\HandlingExceptions\HandlingExceptions\obj\Release\netcoreapp3.1\HandlingExceptions.dll
+C:\Users\admin\source\repos\HandlingExceptions\HandlingExceptions\obj\Release\netcoreapp3.1\HandlingExceptions.pdb
+C:\Users\admin\source\repos\HandlingExceptions\HandlingExceptions\obj\Release\netcoreapp3.1\HandlingExceptions.genruntimeconfig.cache
