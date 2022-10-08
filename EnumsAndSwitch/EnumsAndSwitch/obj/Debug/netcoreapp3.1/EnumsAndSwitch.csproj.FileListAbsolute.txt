@@ -1,0 +1,14 @@
+C:\Users\admin\source\repos\EnumsAndSwitch\EnumsAndSwitch\obj\Debug\netcoreapp3.1\EnumsAndSwitch.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\EnumsAndSwitch\EnumsAndSwitch\obj\Debug\netcoreapp3.1\EnumsAndSwitch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\EnumsAndSwitch\EnumsAndSwitch\obj\Debug\netcoreapp3.1\EnumsAndSwitch.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\EnumsAndSwitch\EnumsAndSwitch\obj\Debug\netcoreapp3.1\EnumsAndSwitch.AssemblyInfo.cs
+C:\Users\admin\source\repos\EnumsAndSwitch\EnumsAndSwitch\obj\Debug\netcoreapp3.1\EnumsAndSwitch.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\EnumsAndSwitch\EnumsAndSwitch\bin\Debug\netcoreapp3.1\EnumsAndSwitch.exe
+C:\Users\admin\source\repos\EnumsAndSwitch\EnumsAndSwitch\bin\Debug\netcoreapp3.1\EnumsAndSwitch.deps.json
+C:\Users\admin\source\repos\EnumsAndSwitch\EnumsAndSwitch\bin\Debug\netcoreapp3.1\EnumsAndSwitch.runtimeconfig.json
+C:\Users\admin\source\repos\EnumsAndSwitch\EnumsAndSwitch\bin\Debug\netcoreapp3.1\EnumsAndSwitch.runtimeconfig.dev.json
+C:\Users\admin\source\repos\EnumsAndSwitch\EnumsAndSwitch\bin\Debug\netcoreapp3.1\EnumsAndSwitch.dll
+C:\Users\admin\source\repos\EnumsAndSwitch\EnumsAndSwitch\bin\Debug\netcoreapp3.1\EnumsAndSwitch.pdb
+C:\Users\admin\source\repos\EnumsAndSwitch\EnumsAndSwitch\obj\Debug\netcoreapp3.1\EnumsAndSwitch.dll
+C:\Users\admin\source\repos\EnumsAndSwitch\EnumsAndSwitch\obj\Debug\netcoreapp3.1\EnumsAndSwitch.pdb
+C:\Users\admin\source\repos\EnumsAndSwitch\EnumsAndSwitch\obj\Debug\netcoreapp3.1\EnumsAndSwitch.genruntimeconfig.cache
