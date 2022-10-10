@@ -1,0 +1,22 @@
+            /*
+            int result1 = InPowerOf(8);
+            Console.WriteLine(result1);
+
+            int result2 = CubeOf(8);
+            Console.WriteLine(result2);
+            */
+
+
+/*
+            static int InPowerOf(int number)
+            {
+                int inPower = number * number;
+                return inPower;
+            }
+
+            static int CubeOf(int number)
+            {
+                int cube = number * number * number;
+                return cube;
+            }
+            */
