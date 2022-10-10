@@ -1,0 +1,55 @@
+            /*
+            // classes and objects
+            Book book1 = new Book();
+            book1.author = "JK Rowling";
+            book1.title = "Harry Potter";
+            book1.pages = 504;
+            book1.genres = "Fantastic";
+
+            Book book2 = new Book();
+            book2.author = "Ch. Aytmatov";
+            book2.title = "Jamila";
+            book2.pages = 156;
+            book2.genres = "Tragedy";
+
+            Console.WriteLine("{0} {1} {2} {3}", book1.author, book1.title, book1.pages, book1.genres);
+            Console.WriteLine("{0} {1} {2} {3}", book2.author, book2.title, book2.pages, book2.genres);
+            */
+
+            /*
+            School school1 = new School();
+            school1.address = "Gimhae, South Korea";
+            school1.name = "Inje University";
+            school1.phoneNumber = "010-4662-8666";
+            school1.id = 1;
+
+            School school2 = new School();
+            school2.address = "Busan, South Korea";
+            school2.name = "Dongseo University";
+            school2.phoneNumber = "233-58-86";
+            school2.id = 2;
+
+            Console.WriteLine("{3} {1} {2} {0}", school1.address, school1.name, school1.phoneNumber, school1.id);
+            Console.WriteLine("{3} {1} {2} {0}", school2.address, school2.name, school2.phoneNumber, school2.id);
+
+            */
+            
+  /*          
+    class School
+    {
+        public string name;
+        public string address;
+        public string phoneNumber;
+        public int id;
+    }
+    
+    {
+    class Book
+    {
+        public string title;
+        public string author;
+        public int pages;
+        public string genres;
+    }
+}
+*/
