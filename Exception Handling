@@ -1,0 +1,32 @@
+//Exception Handling
+           
+            try
+            {
+                Console.Write("Enter fisrt number: ");
+                int fNum1 = Convert.ToInt32(Console.ReadLine());
+
+                Console.Write("Enter second number: ");
+                int fNum2 = Convert.ToInt32(Console.ReadLine());
+
+                int result = fNum1 / fNum2;
+
+                Console.WriteLine("fisrt number / by second number equals to: " + result);
+            }
+            /*
+            catch (Exception error)
+            {
+
+                Console.WriteLine(error.Message);
+            }
+            */
+            catch (DivideByZeroException error)
+            {
+                Console.WriteLine(error.Message);
+            }
+
+            catch (FormatException error)
+            {
+                Console.WriteLine(error.Message);
+            }
+            Console.ReadLine();            
+        }
