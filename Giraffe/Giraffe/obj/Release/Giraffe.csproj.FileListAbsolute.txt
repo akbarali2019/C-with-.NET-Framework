@@ -1,0 +1,6 @@
+C:\Users\admin\source\repos\Giraffe\Giraffe\bin\Release\Giraffe.exe.config
+C:\Users\admin\source\repos\Giraffe\Giraffe\bin\Release\Giraffe.exe
+C:\Users\admin\source\repos\Giraffe\Giraffe\bin\Release\Giraffe.pdb
+C:\Users\admin\source\repos\Giraffe\Giraffe\obj\Release\Giraffe.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\Giraffe\Giraffe\obj\Release\Giraffe.exe
+C:\Users\admin\source\repos\Giraffe\Giraffe\obj\Release\Giraffe.pdb
