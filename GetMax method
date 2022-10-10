@@ -1,0 +1,37 @@
+/*
+            Console.Write("Enter your first number: ");
+            int userNum1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter your second number: ");
+            int userNum2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter your third number: ");
+            int userNum3 = Convert.ToInt32(Console.ReadLine());
+
+            int result = (GetMax(userNum1, userNum2, userNum3));            
+            Console.WriteLine("Bigger one is: " + result);
+            */
+
+
+
+/*
+            static int GetMax(int num1, int num2, int num3)
+            {
+                int bigNum;
+
+                if (num1 > num2 && num1 > num3)
+                {
+                    bigNum = num1;
+                }
+                else if (num2 > num1 && num2 > num3)
+                {
+                    bigNum = num2;
+                }
+                else
+                {
+                    bigNum = num3;
+                }
+
+                return bigNum;
+            }
+            */
