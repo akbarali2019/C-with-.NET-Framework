@@ -1,0 +1,75 @@
+//MainClass
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Giraffe
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Chef chef = new Chef();
+            chef.MakeSpecial();
+
+            UzbekChef uzbekChef = new UzbekChef();
+            uzbekChef.MakeSpecial();
+
+            Console.ReadLine();            
+        }   
+    }
+}
+        
+//SuperClass    
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Giraffe
+{
+    class Chef
+    {
+        public void MakeChicken()
+        {
+            Console.WriteLine("The Chef makes chicken");
+        }
+
+        public void MakeSalad()
+        {
+            Console.WriteLine("The Chef makes salad");
+        }
+
+        public virtual void MakeSpecial()
+        {
+            Console.WriteLine("The Chef makes cake");
+        }
+    }
+}
+
+
+// SubClass
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Giraffe
+{
+    class UzbekChef : Chef
+    {
+        public void MakeJuice()
+        {
+            Console.WriteLine("The Chef makes juice");
+        }
+
+        public override void MakeSpecial()
+        {
+            Console.WriteLine("The Chef makes Palov");
+        }
+    }
+}
