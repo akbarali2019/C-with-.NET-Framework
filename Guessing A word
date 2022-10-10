@@ -1,0 +1,36 @@
+/Guessing A word
+
+            /*
+            Console.WriteLine("Welcome to Word Guess Game!");
+
+            string secretWord1 = "Home";
+            string secretWord2 = "home";
+            string guess = "";
+            int countLimit = 3;
+            int guessCounter = 0;
+            bool outOfLimit = false;
+
+            while (guess != secretWord1 && guess != secretWord2 && !outOfLimit)
+            {
+                if (guessCounter < countLimit)
+                {
+                    Console.Write("Enter a guess: ");
+                    guess = Console.ReadLine();
+                    guessCounter++;
+                }
+                else
+                {
+                    outOfLimit = true;
+                }
+            }
+
+            
+            if (outOfLimit)
+            {
+                Console.WriteLine("You have lost!");
+            }
+            else
+            {
+                Console.WriteLine("True guess, and you are a winner!");
+            }
+            */
