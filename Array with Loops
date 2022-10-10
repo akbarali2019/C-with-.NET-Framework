@@ -1,0 +1,84 @@
+string[] names = { "Jamol", "Azam", "Ahror", "Ahmad", "Alisher" };
+
+            int[] numbers = { 1, 5, 8, 12, 21, 5 };
+
+            for (int i = 0; i < names.Length; i++)
+            {
+                Console.WriteLine(names[i]);
+            }
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                Console.WriteLine(numbers[i]);
+            }
+            */
+
+            /*
+            Console.WriteLine(GetPow(4,4));
+            */
+            
+
+            /*
+            int[,] numberArray = 
+            {
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 8, 9, 0 } 
+            };
+            //int sumOfArray = numberArray[1, 2] * numberArray[0, 2];
+            //Console.WriteLine(sumOfArray);
+
+            for (int i = 0; i < numberArray.GetLength(0); i++)
+            {
+                Console.Write("{ ");
+                for (int j = 0; j < numberArray.GetLength(1); j++)
+                {
+                    
+                    Console.Write(numberArray[i, j] + " ");
+                    
+                }
+                
+                Console.Write("}");
+                Console.Write("\n");
+            }
+            */
+
+
+            /*
+            int[,] myArray = new int[2, 4];
+            
+            myArray[0, 0] = 0;
+            myArray[0, 1] = 1;
+            myArray[0, 2] = 2;
+            myArray[0, 3] = 3;
+            myArray[1, 0] = 4;
+            myArray[1, 1] = 5;
+            myArray[1, 2] = 6;
+            myArray[1, 3] = 7;
+            
+
+            for (int i = 0; i < myArray.GetLength(0); i++)
+            {
+                Console.Write("\n" + i + ": ");
+                for (int j = 0; j <myArray.GetLength(1); j++)
+                {
+                    Console.Write(myArray[i, j] + " ");
+                }
+                
+            }
+            */
+
+            /*
+            int[,] numbers = { { 2, 3, 9 }, { 4, 5, 9 } };
+
+            for (int i = 0; i < numbers.GetLength(0); i++)
+            {
+                Console.Write("Row " + i + ": ");
+
+                for (int j = 0; j < numbers.GetLength(1); j++)
+                {
+                    Console.Write(numbers[i, j] + " ");
+
+                }
+            }
+            */
