@@ -1,0 +1,61 @@
+// See https://aka.ms/new-console-template for more information
+//Console.WriteLine("Hello, World!");
+
+
+using System.Collections.Generic;
+
+namespace UnderstandingLINQ
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Car> myCars = new List<Car>()
+            {
+                new Car() {VIN = "A1", Make = "BMW", Model = "550i1", Year = 2020},
+                new Car() {VIN = "A2", Make = "Merc", Model = "550i2", Year = 2019},
+                new Car() {VIN = "A3", Make = "BMW", Model = "550i3", Year = 2010},
+                new Car() {VIN = "A4", Make = "Merc", Model = "550i4", Year = 2005},
+                new Car() {VIN = "A5", Make = "BMW", Model = "550i5", Year = 2011}
+            };
+
+            /*
+            //LINQ Query Syntax Language Integrated Query
+            var benzes = from car in myCars
+                         where car.Make == "Merc"
+                         && car.Year == 2019 
+                         select car;
+
+            foreach (var car in benzes)
+            {
+                Console.WriteLine("{0} {1}", car.VIN, car.Model);
+            }
+            */
+
+            //LINQ Method Syntax with lambda expression -> (little method inside a method)
+
+            var benzes = myCars.Where(lambda => lambda.Make == "Merc" && lambda.Year == 2019);
+            foreach (var car in benzes)
+            {
+                Console.WriteLine("{0} {1}", car.VIN, car.Model);
+            }
+
+            var myCar = myCars.Where(lambda => lambda.Make == "BMW");
+            foreach (var cars in myCars)
+            {
+                Console.WriteLine("{0} {1} {2} {3}", cars.VIN, cars.Make, cars.Model, cars.Year);
+            }
+
+
+            Console.ReadLine();
+        }
+    }
+    class Car
+    {
+        public string VIN { get; set; }
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public int Year { get; set; }
+    }
+
+}
