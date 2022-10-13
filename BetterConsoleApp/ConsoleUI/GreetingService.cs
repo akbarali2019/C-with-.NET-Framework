@@ -21,7 +21,7 @@ namespace ConsoleUI
         {
             for (int i = 0; i < _config.GetValue<int>("LoopTimes"); i++)
             {
-                _log.LogError("Run number {runNumber}", i);
+                _log.LogError("Run number {runNumber}", i); //Change "LogError" into "LogInformation"
             }
         }
     }
