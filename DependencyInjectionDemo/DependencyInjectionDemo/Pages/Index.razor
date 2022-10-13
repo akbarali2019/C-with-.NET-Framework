@@ -1,0 +1,27 @@
+﻿@page "/"
+@using DependencyInjectionDemo.Logic
+@inject IDemoLogic mylogic
+@inject ILogger<Index> logger
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+
+<h3>
+    Value1: @mylogic.Value1
+</h3>
+
+<h3>
+    Value2: @mylogic.Value2
+</h3>
+
+@code {
+
+    protected override void OnInitialized()
+    {
+        logger.LogInformation(DateTime.Now + " Displaying values of {0} and {1}",
+            mylogic.Value1,
+            mylogic.Value2);
+    }
+}
