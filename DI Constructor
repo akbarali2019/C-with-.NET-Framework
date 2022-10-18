@@ -1,0 +1,73 @@
+using System;
+using Unity;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            IUnityContainer container = new UnityContainer();
+            container.RegisterType<IPersonService, PersonService>();
+            container.RegisterType<ILogger, Logger>();
+
+            ILogger logger = container.Resolve<ILogger>();
+            logger.Log();
+
+            //var logger = new Logger();
+            //Console.WriteLine("Hello World!");
+            //var anotherLogger = new AnotherLogger();
+            //var service = new PersonService(anotherLogger);
+            //service.DoStuff();
+            
+            
+             
+
+            Console.ReadLine();
+        }
+
+        interface IPersonService
+        {
+            void DoStuff();
+        }
+
+        class PersonService : IPersonService
+        {
+            ILogger _logger;
+
+            public PersonService(ILogger logger) //why here there is no void? --> because this is constructor of the PersonService class
+            {
+                _logger = logger;
+                //Console.WriteLine("My code is running...");
+            }
+
+            public void DoStuff()  //Method
+            {
+                Console.WriteLine("Here is my code: ");
+                _logger.Log();
+            }
+        }
+
+        interface ILogger
+        {
+            void Log();
+        }
+
+        class Logger : ILogger
+        {
+            public void Log()
+            {
+                Console.WriteLine("I Logged here...");
+            }
+        }
+
+        class AnotherLogger : ILogger
+        {
+            public void Log()
+            {
+                Console.WriteLine("Here is my another Logger...");
+            }
+        }
+    }
+}
