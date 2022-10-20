@@ -1,0 +1,24 @@
+﻿<Window x:Class="EducationPurpose.exampleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EducationPurpose"
+        mc:Ignorable="d"
+        Title="exampleWindow" Height="400" Width="400">
+    <Grid>
+        <StackPanel>
+            <Label>Here is My Label on the Second Window</Label>
+        </StackPanel>
+
+        <StackPanel>
+            <Button 
+                x:Name="secondButton" 
+                HorizontalAlignment="Left"
+                Margin="40"
+                Click="MainButtonLast2_Clicked"
+                Content="Add Name"/>
+        </StackPanel>
+        
+    </Grid>
+</Window>
