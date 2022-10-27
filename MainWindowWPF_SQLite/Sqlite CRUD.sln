@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sqlite CRUD", "Sqlite CRUD\Sqlite CRUD.csproj", "{660BD38F-9E42-4732-929B-FC5B94B07617}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{660BD38F-9E42-4732-929B-FC5B94B07617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{660BD38F-9E42-4732-929B-FC5B94B07617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{660BD38F-9E42-4732-929B-FC5B94B07617}.Debug|x86.ActiveCfg = Debug|x86
+		{660BD38F-9E42-4732-929B-FC5B94B07617}.Debug|x86.Build.0 = Debug|x86
+		{660BD38F-9E42-4732-929B-FC5B94B07617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{660BD38F-9E42-4732-929B-FC5B94B07617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{660BD38F-9E42-4732-929B-FC5B94B07617}.Release|x86.ActiveCfg = Release|x86
+		{660BD38F-9E42-4732-929B-FC5B94B07617}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C96FD18C-E7B4-4D94-A1E8-44BE9D9545A5}
+	EndGlobalSection
+EndGlobal
