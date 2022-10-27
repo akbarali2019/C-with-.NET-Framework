@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,17 +35,37 @@ namespace Sqlite_CRUD
                 var name = NameTextBox.Text;
                 var address = AddressTextBox.Text;
                 var age = AgeTextBox.Text;
-                
+                try
+                {
+                    if (int.Parse(age) <= 0 || int.Parse(age) >= 100)
+                    {
+                        throw new Exception(); 
+                    }
+                    context.Users.Add(new User() { Name = name, Address = address, Age = age });
+                    context.SaveChanges();
+                    Close();
 
-                if (name != null && address != null && age != null)
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show(age + 
+                        " is an invalid input for an Age. " +
+                        "Please enter a valid input!");
+                }
+
+                /*
+                else if(name != null && address != null && age != null)
                 {
                     context.Users.Add(new User() { Name = name, Address = address, Age = age});
                     context.SaveChanges();
-                }                
-                Close();
+                }
+                */
+                
 
             }
         }
+
+
         private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
             Create();
