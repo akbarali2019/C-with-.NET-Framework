@@ -1,7 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -15,11 +16,13 @@ using System.Windows.Shapes;
 
 namespace Sqlite_CRUD
 {
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public List<User> DatabaseUsers { get; private set; }
 
         public MainWindow()
@@ -27,63 +30,19 @@ namespace Sqlite_CRUD
             InitializeComponent();
         }
 
-        public void Create()
-        {
 
-            using (DataContext context = new DataContext())
-            {
-                var name = NameTextBox.Text;                
-                var address = AddressTextBox.Text;
-
-                if (name != null && address != null)
-                {
-                    context.Users.Add(new User() { Name = name, Address = address});
-                    context.SaveChanges();
-                }
-                NameTextBox.Clear();
-                AddressTextBox.Clear();
-               
-            }
-        }
+        
 
         public void Read()
         {
             using (DataContext context = new DataContext())
-            {               
-                 DatabaseUsers = context.Users.ToList();
-                ItemList.ItemsSource = DatabaseUsers;
-            }
-
-        }
-
-        public void Update()
-        {
-
-
-            using (DataContext context = new DataContext())
             {
-
-                User selectedUser =   ItemList.SelectedItem as User;
-
-                var name = NameTextBox.Text;
-                var address = AddressTextBox.Text;
-
-                if (name != null && address != null) 
-                {
-                     User user = context.Users.Find(selectedUser.Id);
-                    user.Name = name;                  
-                    user.Address = address;
-
-                    context.SaveChanges();
-                }
-                NameTextBox.Clear();
-                AddressTextBox.Clear();
-
+                DatabaseUsers = context.Users.ToList();
+                ItemList.ItemsSource = DatabaseUsers;   
             }
 
-
-
         }
+
 
         public void Delete()
         {
@@ -99,35 +58,28 @@ namespace Sqlite_CRUD
                     User user = context.Users.Single(x=> x.Id == selectedUser.Id);
 
                     context.Remove(user);
+                    
                     context.SaveChanges();
-
+                    
                 }
-                NameTextBox.Clear();
-                AddressTextBox.Clear();
+                                
             }
-
-
-
         }
 
-        private void CreateButton_Click(object sender, RoutedEventArgs e)
-        {
-            Create();
-        }
-
-        private void ReadButton_Click(object sender, RoutedEventArgs e)
-        {
-            Read();
-        }
-
+        
         private void UpdateButton_Click(object sender, RoutedEventArgs e)
         {
-            Update();
+            if (ItemList.SelectedItem == null) return;
+            UpdatePage addmember = new UpdatePage(ItemList.SelectedItem as User);
+            addmember.ShowDialog();
+            Read();
+            //Update();
         }
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
             Delete();
+            Read();
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
@@ -135,6 +87,13 @@ namespace Sqlite_CRUD
 
             ItemList.Items.Clear();
 
+        }
+
+        private void EnableCheckButton_Click(object sender, RoutedEventArgs e)
+        {
+            AddMember addmember = new AddMember();
+            addmember.ShowDialog();
+            Read();
         }
     }
 }
