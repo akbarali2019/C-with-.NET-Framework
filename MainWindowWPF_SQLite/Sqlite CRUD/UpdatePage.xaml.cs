@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -45,6 +45,7 @@ namespace Sqlite_CRUD
                 var address = AddressTextBox.Text;
                 var age = AgeTextBox.Text;
 
+                /*
                 if (name != null && address != null && age != null)
                 {
                     User user = context.Users.Find(selectedUser.Id);
@@ -56,7 +57,29 @@ namespace Sqlite_CRUD
                 }
                 
                 Close();
+                */
+
+                try
+                {
+                    if (int.Parse(age) <= 0 || int.Parse(age) >= 100)
+                    {
+                        throw new Exception();
+                    }
+                    User user = context.Users.Find(selectedUser.Id);
+
+                    user.Name = name;
+                    user.Address = address;
+                    user.Age = age;
+
+                    context.SaveChanges();
+                    Close();
+                }
                 
+                catch (Exception)
+                {
+                    MessageBox.Show("Oops! Your input " + age + " is an invalid value. Please enter a valid input!");
+                }
+
             }
             
         }
