@@ -1,0 +1,188 @@
+
+C:\Users\orangestep5>cd .
+
+C:\Users\orangestep5>cd Desktop
+
+C:\Users\orangestep5\Desktop>git clone https://github.com/akbarali2019/Web-Application-using-JavaScript.git
+Cloning into 'Web-Application-using-JavaScript'...
+remote: Enumerating objects: 45, done.
+remote: Counting objects: 100% (45/45), done.
+remote: Compressing objects: 100% (43/43), done.
+Receiving objects:  97% (44/45), 2.53 MiB | 5.01 MiB/sreused 0
+Receiving objects: 100% (45/45), 4.18 MiB | 5.56 MiB/s, done.
+Resolving deltas: 100% (13/13), done.
+
+C:\Users\orangestep5\Desktop>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\orangestep5\Desktop>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 0690-F419
+
+ Directory of C:\Users\orangestep5\Desktop
+
+11/02/2022  04:32 PM    <DIR>          .
+11/02/2022  04:32 PM    <DIR>          ..
+10/20/2022  11:49 AM            29,748 1.PNG
+10/26/2022  04:25 PM    <DIR>          1stP
+10/20/2022  11:52 AM           698,626 2.PNG
+10/26/2022  10:24 AM             2,189 Asana.lnk
+10/13/2022  11:39 AM            23,626 Capture1.PNG
+09/15/2022  03:58 PM            24,914 issue1.PNG
+09/21/2022  03:15 PM    <DIR>          KefaProject
+09/21/2022  02:56 PM    <DIR>          KISA_SEED_ECB_CBC_CTR_CCM_GCM_CMAC
+10/12/2022  02:12 PM    <DIR>          myapp
+09/14/2022  09:12 AM    <DIR>          oldDesktop
+10/13/2022  02:56 PM    <DIR>          Test
+11/02/2022  04:32 PM    <DIR>          Web-Application-using-JavaScript
+10/27/2022  02:17 PM             9,694 yeungjin1.PNG
+10/27/2022  02:20 PM           108,873 yeungjin2.PNG
+10/27/2022  02:07 PM           153,040 yongjin.png
+               8 File(s)      1,050,710 bytes
+               9 Dir(s)  245,116,780,544 bytes free
+
+C:\Users\orangestep5\Desktop>cd Web-Application-using-JavaScript
+
+C:\Users\orangestep5\Desktop\Web-Application-using-JavaScript>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 0690-F419
+
+ Directory of C:\Users\orangestep5\Desktop\Web-Application-using-JavaScript
+
+11/02/2022  04:32 PM    <DIR>          .
+11/02/2022  04:32 PM    <DIR>          ..
+11/02/2022  04:32 PM    <DIR>          css
+11/02/2022  04:32 PM    <DIR>          hml
+11/02/2022  04:32 PM    <DIR>          js
+11/02/2022  04:32 PM         1,445,525 main page.png
+11/02/2022  04:32 PM         1,445,525 mainpage.png
+11/02/2022  04:32 PM         1,350,278 pages.png
+11/02/2022  04:32 PM         1,480,920 pages1.png
+11/02/2022  04:32 PM               705 README.md
+11/02/2022  04:32 PM            10,244 _DS_Store
+               6 File(s)      5,733,197 bytes
+               5 Dir(s)  245,086,998,528 bytes free
+
+C:\Users\orangestep5\Desktop\Web-Application-using-JavaScript>less README.md
+'less' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\orangestep5\Desktop\Web-Application-using-JavaScript>more README.md
+# Web-Application-using-JavaScript
+Web Application for Local Tourism
+
+# Tousrism Website
+
+The website is about tourism in the local area of Uzbekistan. It includes some special information on the touristic places and cities of the country.
+
+## Used Tools
+      HTML
+      CSS
+      JavaScript
+      Windows 10
+      Visual Studio
+      Parallax
+
+The Parallax was build mainly using CSS and few JavaScript techniques.
+
+### Here, you can see the pages and parallaxing effect of the website.
+![Screenshot](mainpage.png)
+![Screenshot](pages1.png)
+![Screenshot](pages.png)
+![image](https://user-images.githubusercontent.com/52565814/60790410-68fea600-a19c-11e9-86a4-2908f6c841f4.png)
+
+
+
+C:\Users\orangestep5\Desktop\Web-Application-using-JavaScript>git checkout -b fix-readme-typo
+Switched to a new branch 'fix-readme-typo'
+
+C:\Users\orangestep5\Desktop\Web-Application-using-JavaScript>emacs README.md
+'emacs' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\orangestep5\Desktop\Web-Application-using-JavaScript>notepad README.md
+
+C:\Users\orangestep5\Desktop\Web-Application-using-JavaScript>notepad -nw README.md
+
+C:\Users\orangestep5\Desktop\Web-Application-using-JavaScript>git status
+On branch fix-readme-typo
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        -nw README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\orangestep5\Desktop\Web-Application-using-JavaScript>git diff
+diff --git a/README.md b/README.md
+index 54ce984..bd6b4ee 100644
+--- a/README.md
++++ b/README.md
+@@ -1,7 +1,7 @@
+ # Web-Application-using-JavaScript
+ Web Application for Local Tourism
+
+-# Tousrism Website
++# Tousrism Website Demo Version
+
+ The website is about tourism in the local area of Uzbekistan. It includes some special information on the touristic places and cities of the country.
+
+
+C:\Users\orangestep5\Desktop\Web-Application-using-JavaScript>git add README.md
+
+C:\Users\orangestep5\Desktop\Web-Application-using-JavaScript>git commit -m "My first pull request"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'orangestep5@DESKTOP-QJRNKNP.(none)')
+
+C:\Users\orangestep5\Desktop\Web-Application-using-JavaScript>git config --global user.email otakhanov.akbarali@gmail.com
+
+C:\Users\orangestep5\Desktop\Web-Application-using-JavaScript>git config --local -l
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/akbarali2019/Web-Application-using-JavaScript.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+
+C:\Users\orangestep5\Desktop\Web-Application-using-JavaScript>git commit -m "My first pull request"
+[fix-readme-typo 9b33983] My first pull request
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\orangestep5\Desktop\Web-Application-using-JavaScript>git push origin fix-readme-typo
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 330 bytes | 330.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'fix-readme-typo' on GitHub by visiting:
+remote:      https://github.com/akbarali2019/Web-Application-using-JavaScript/pull/new/fix-readme-typo
+remote:
+To https://github.com/akbarali2019/Web-Application-using-JavaScript.git
+ * [new branch]      fix-readme-typo -> fix-readme-typo
+
+C:\Users\orangestep5\Desktop\Web-Application-using-JavaScript>
+
+
