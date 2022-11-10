@@ -203,6 +203,137 @@ namespace CloudFireEng
         {
 
         }
+        /////////////////////How to replace and delete fields of the document in the collection//////
+        ///
 
+        async void Replace_All()
+        {
+            DocumentReference docref = database.Collection("MyCities").Document("Andijan");
+            Dictionary<string, object> data = new Dictionary<string, object>()
+            {
+                {"name", "Samarkand" },
+                {"specializedField", "Tourism" }
+
+            };
+
+            DocumentSnapshot snap = await docref.GetSnapshotAsync();
+            if (snap.Exists)
+            {
+                await docref.SetAsync(data);
+            }
+        }
+
+        async void Update_Field()
+        {
+            DocumentReference docref = database.Collection("MyCities").Document("Andijan");
+            Dictionary<string, object> data = new Dictionary<string, object>()
+            {
+                //{"name", "Samarkand" },
+                //{"specializedField", "Tourism - Registan Square" }
+                {"population", 4200000 }
+
+            };
+
+            DocumentSnapshot snap = await docref.GetSnapshotAsync();
+            if (snap.Exists)
+            {
+                await docref.UpdateAsync(data);
+            }
+        }
+
+
+        async void Update_List_or_Nested_Elements()
+        {
+            DocumentReference docref = database.Collection("Add_List").Document("firstList");
+            Dictionary<string, object> data = new Dictionary<string, object>()
+            {
+                //{"name", "Samarkand" },
+                //{"specializedField", "Tourism - Registan Square" }
+                {"myList.LastName", "Boburxanov Nodir Ugli" },
+                {"myList.Address", "Namangan, Uzbekistan" }
+
+            };
+
+            DocumentSnapshot snap = await docref.GetSnapshotAsync();
+            if (snap.Exists)
+            {
+                await docref.UpdateAsync(data);
+            }
+        }
+
+        async void Update_Array()
+        {
+            DocumentReference docref = database.Collection("Add_Array").Document("firstArray");
+            DocumentSnapshot snap = await docref.GetSnapshotAsync();
+
+            if (snap.Exists)
+            {
+                await docref.UpdateAsync("myArray", FieldValue.ArrayUnion("abcd", 456));
+            }
+        }
+
+        void Delete_EntireDocument()
+        {
+            DocumentReference docref = database.Collection("MyCities").Document("Andijan");
+            docref.DeleteAsync();
+            MessageBox.Show("Deleted Successfully");
+        }
+
+        void Delete_Field_within_Document()
+        {
+            DocumentReference docref = database.Collection("MyCities").Document("Tashkent");
+            Dictionary<string, object> data = new Dictionary<string, object>()
+            {
+                {"Population", FieldValue.Delete }
+            };
+
+            docref.UpdateAsync(data);
+            MessageBox.Show("Deleted Successfully");
+        }
+
+        void Delete_Value_within_Document_List()
+        {
+            DocumentReference docref = database.Collection("Add_List").Document("firstList");
+            Dictionary<string, object> data = new Dictionary<string, object>()
+            {
+                {"myList.PhoneNumber", FieldValue.Delete }
+            };
+
+            docref.UpdateAsync(data);
+            MessageBox.Show("Deleted Successfully");
+        }
+
+        void Delete_Value_within_Document_Array()
+        {
+            DocumentReference docref = database.Collection("Add_Array").Document("firstArray");
+            Dictionary<string, object> data = new Dictionary<string, object>()
+            {
+                {"myArray", FieldValue.ArrayRemove(1564, "olma") }
+            };
+
+            docref.UpdateAsync(data);
+            MessageBox.Show("Deleted Successfully");
+        }
+
+        async void GetAllDocuments(string nameOfCollection)
+        {
+            Query cityque = database.Collection(nameOfCollection);
+            QuerySnapshot snap = await cityque.GetSnapshotAsync();
+
+            foreach (DocumentSnapshot docsnap in snap.Documents)
+            {
+                City city = docsnap.ConvertTo<City>();
+
+                if (docsnap.Exists)
+                {
+                    dataGridView1.Rows.Add(docsnap.Id, city.Province, city.isCapital.ToString(), city.Population.ToString());
+                }
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
