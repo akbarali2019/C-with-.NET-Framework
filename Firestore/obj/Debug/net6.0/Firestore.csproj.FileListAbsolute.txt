@@ -1,0 +1,16 @@
+C:\Users\LENOVO\Desktop\KnexusFirebase\single-06.01-alter-Log-FluentModbus\Firestore\Firestore\obj\Debug\net6.0\Firestore.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Desktop\KnexusFirebase\single-06.01-alter-Log-FluentModbus\Firestore\Firestore\obj\Debug\net6.0\Firestore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\Desktop\KnexusFirebase\single-06.01-alter-Log-FluentModbus\Firestore\Firestore\obj\Debug\net6.0\Firestore.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Desktop\KnexusFirebase\single-06.01-alter-Log-FluentModbus\Firestore\Firestore\obj\Debug\net6.0\Firestore.AssemblyInfo.cs
+C:\Users\LENOVO\Desktop\KnexusFirebase\single-06.01-alter-Log-FluentModbus\Firestore\Firestore\obj\Debug\net6.0\Firestore.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\KnexusFirebase\single-06.01-alter-Log-FluentModbus\Firestore\Firestore\obj\Debug\net6.0\Firestore.sourcelink.json
+C:\Users\LENOVO\Desktop\KnexusFirebase\single-06.01-alter-Log-FluentModbus\Firestore\Firestore\bin\Debug\net6.0\Firestore.deps.json
+C:\Users\LENOVO\Desktop\KnexusFirebase\single-06.01-alter-Log-FluentModbus\Firestore\Firestore\bin\Debug\net6.0\Firestore.dll
+C:\Users\LENOVO\Desktop\KnexusFirebase\single-06.01-alter-Log-FluentModbus\Firestore\Firestore\bin\Debug\net6.0\Firestore.pdb
+C:\Users\LENOVO\Desktop\KnexusFirebase\single-06.01-alter-Log-FluentModbus\Firestore\Firestore\bin\Debug\net6.0\DBLib.dll
+C:\Users\LENOVO\Desktop\KnexusFirebase\single-06.01-alter-Log-FluentModbus\Firestore\Firestore\bin\Debug\net6.0\DBLib.pdb
+C:\Users\LENOVO\Desktop\KnexusFirebase\single-06.01-alter-Log-FluentModbus\Firestore\Firestore\obj\Debug\net6.0\Firestore.csproj.Up2Date
+C:\Users\LENOVO\Desktop\KnexusFirebase\single-06.01-alter-Log-FluentModbus\Firestore\Firestore\obj\Debug\net6.0\Firestore.dll
+C:\Users\LENOVO\Desktop\KnexusFirebase\single-06.01-alter-Log-FluentModbus\Firestore\Firestore\obj\Debug\net6.0\refint\Firestore.dll
+C:\Users\LENOVO\Desktop\KnexusFirebase\single-06.01-alter-Log-FluentModbus\Firestore\Firestore\obj\Debug\net6.0\Firestore.pdb
+C:\Users\LENOVO\Desktop\KnexusFirebase\single-06.01-alter-Log-FluentModbus\Firestore\Firestore\obj\Debug\net6.0\ref\Firestore.dll
