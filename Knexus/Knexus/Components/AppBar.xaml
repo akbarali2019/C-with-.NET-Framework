@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="Knexus.Components.AppBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="{StaticResource SysWidth}">
+    <Grid>
+        <Border Background="{StaticResource MainColor}" BorderBrush="Black" BorderThickness="1,1,1,1"  CornerRadius="0,0,14,14">
+            <Grid x:Name="MainGrid" Height="30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="0.2*"/> 
+                </Grid.ColumnDefinitions>
+                <Grid.Resources>
+                    <Style TargetType="Border" >
+                        <Setter Property="Padding" Value="5,5,5,5" />
+                    </Style>
+                </Grid.Resources>
+
+                <TextBlock x:Name="HeaderText" Text="" Grid.Column="0" FontWeight="Bold" FontSize="17" Margin="10 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+
+                <TextBlock x:Name="DateTimeTextBlock" Text ="2000-01-01  16:30:01" Grid.Column="2" FontWeight="Bold" 
+                        FontSize="17" HorizontalAlignment="Right" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                <Image x:Name="NetworkStatus" Source="../Images/Icons/signal.png" HorizontalAlignment="Left" Visibility="Hidden" Width="25" Grid.Column="3" Margin="10 0 0 0"/>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>
