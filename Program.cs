@@ -33,6 +33,8 @@ Where command is one of
     listen-multiple
     listen-for-changes
 ";
+
+        //Listen updates for only single Doc on Firestore Db
         private static async Task ListenDocument(string project)
         {
             FirestoreDb db = FirestoreDb.Create(project);
@@ -52,7 +54,7 @@ Where command is one of
                     }
                 }
             });
-            // [END firestore_listen_document]
+            // [END firestore_listen_document] snapshot=> onUpdate()
 
             // Create a new document at cities/SF to demonstrate realtime listener
             Console.WriteLine("Creating document");
