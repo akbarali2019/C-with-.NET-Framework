@@ -16,6 +16,10 @@ namespace Firestore
         {
             services.AddSingleton<FirestoreRepository>();
 
+            services.AddSingleton<FirestoreListener>();
+            services.AddTransient<FTCN2Handler>();
+            services.AddTransient<FTVERHandler>();
+
         }
     }
 }
