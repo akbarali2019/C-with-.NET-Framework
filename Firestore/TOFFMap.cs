@@ -45,68 +45,7 @@ namespace Firestore.AutoSendProtos
             this .factoryLog = factoryLog;
         }
         public TOFFMap() { }
-
-        /*        public async Task AddGwOffDataToFirestoreAsync(DateTime from, DateTime to, FirestoreDb db, string mode)
-                {
-                    List<DateTime> offDates = new();
-                    var curmode = mode;
-                    using var workOfLog = factoryLog.Create(DateTime.Now);
-                    using var workOfSetting = factorySetting.Create();
-                    var setting = workOfSetting.Repo.GetFirst();
-                    try
-                    {
-                        for (var date = from.Date; date <= to.Date; date = date.AddDays(1))
-                        {
-                            var dbFile = DbFileManager.GetRootPath() + $"DAY_{to:yyyyMMdd}.db";
-                            if (!File.Exists(dbFile)) continue;
-
-                            List<DateTime> collectedOffData = new();
-                            if (curmode == "ALL" || curmode == "FIV")
-                            {
-                                using var work = factoryItem.Create(date);
-                                collectedOffData = work!.Repo.GetTurnOffDate(from, to);
-                                offDates.AddRange(collectedOffData);
-                                var mappedOffData = MapTOFFData(collectedOffData, setting, mode);
-                                var collectionReference = GetReference(setting, db!);
-                                await collectionReference.SetAsync(mappedOffData);
-                                workOfLog.Repo.AddNew($"[TOFF] {date:yyyyMMdd} [{string.Join("],[", collectedOffData.Select(ft => ft.ToString("HHmm")))}]", "[Tx] [TOFF]");
-                                workOfLog.Repo.AddNew("<ACK>", "[RX] [TOFF]");
-                            }
-
-                            if (curmode == "ALL" || curmode == "HAF")
-                            {
-                                using var work = factoryHafItem.Create(date);
-                                collectedOffData = work!.Repo.GetTurnOffDate(from, to);
-                                offDates.AddRange(collectedOffData);
-                                var mappedOffData = MapTOFFData(collectedOffData, setting, mode);
-                                var collectionReference = GetReference(setting, db!);
-                                await collectionReference.SetAsync(mappedOffData);
-                                workOfLog.Repo.AddNew($"[TOFF] {date:yyyyMMdd} [{string.Join("],[", collectedOffData.Select(ft => ft.ToString("HHmm")))}]", "[Tx] [TOFF]");
-                                workOfLog.Repo.AddNew("<ACK>", "[RX] [TOFF]");
-                            }
-
-                            if (!collectedOffData.Any())
-                            {
-                                workOfLog.Repo.AddNew($"[TOFF] <<{from:yyyy-MM-dd HH:mm} ~ {to:yyyy-MM-dd HH:mm}>> 데이터가 없습니다", "[TX] [TOFF]");
-                                workOfLog.Complete();
-                                return;
-                            }                   
-                        }
-                        workOfLog.Repo.AddNew("<EOT>", "[TX] [TOFF]");
-                        workOfLog.Complete();
-
-                        UpdateSentValues(offDates);
-
-                    }
-                    catch (Exception ex)
-                    {
-                        workOfLog.Repo.AddNew("<NAK>", "[RX] [TOFF] " + ex);
-                        workOfLog.Repo.AddNew("<EOT>", "[TX] [TOFF]");
-                        workOfLog.Complete();
-                    }
-                }*/
-
-
+        
         public void AddGwOffDataToFirestoreAsync(DateTime from, DateTime to, FirestoreDb db, string mode)
         {
             List<DateTime> offDates = new();
