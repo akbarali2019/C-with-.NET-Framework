@@ -1,0 +1,132 @@
+using Firestore.AutoSendProtos;
+using Firestore.ProtoMessageMaps;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Google.Cloud.Firestore;
+using System.Diagnostics;
+using DBLib.Setup.Entities;
+using DBLib.Setup;
+using DBLib;
+
+namespace Firestore.ProtoResponseHandlers
+{
+    public class PDUHHandler
+    {
+        private string? Mode { get; set; }
+        private DateTime From { get; set; }
+        private DateTime To { get; set; }
+
+        private readonly IRepoFactory<SetupRepository<Setting>> factorySetting;
+
+        private readonly TDUH tduh;
+        private readonly TNOHMap tnohMap;
+        private readonly TOFFMap toffMap;
+        private readonly TDDHMap tddhMap;
+        public PDUHHandler(IRepoFactory<SetupRepository<Setting>> factorySetting, 
+            
+            TDUH tduh, 
+            TNOHMap tnohMap, 
+            TOFFMap toffMap, 
+            TDDHMap tddhMap)
+        { 
+            this.factorySetting = factorySetting;
+            this.tduh = tduh;
+            this.tnohMap = tnohMap;
+            this.toffMap = toffMap;
+            this.tddhMap = tddhMap;
+        }
+
+
+        public void HandlePDUH(List<string> pduhMessageValue, FirestoreDb db, string docID)
+        {
+            var isDone = TDUHResponse(pduhMessageValue, db!, docID);
+
+            if (isDone)
+            {
+                try
+                {
+                    Mode = pduhMessageValue[0];
+                    From = DateTime.ParseExact(pduhMessageValue[1], "yyMMddHHmm", null);
+                    To = DateTime.ParseExact(pduhMessageValue[2], "yyMMddHHmm", null).AddSeconds(1);
+
+                    if (Mode != "FIV") tnohMap.ExceptionData(From, To, db!, docID);
+
+                    // TOFF and TDDD should not contain todays data
+                    var now = DateTime.Now;
+                    if (From.Date == To.Date)
+                    {
+                        AddFirestoreField(db, docID);
+                        return;
+                    }
+
+                    if (From > now.Date && To > now.Date)
+                    {
+                        AddFirestoreField(db, docID);
+                        return;
+                    }
+
+                    From = From.Date;
+                    var ToEndOfDay = To.Date.AddDays(1).AddMinutes(-5); // To at 23:55
+                    if (To < ToEndOfDay || To > now.Date) To = To.Date.AddMinutes(-2);
+
+                    toffMap.AddGwOffDataToFirestoreAsync(From, To, db!, Mode, docID);
+                    tddhMap.AddEndDayRecord(From, To, Mode, db!, docID);
+
+                    AddFirestoreField(db, docID);
+                }
+                catch { }
+            }
+        }
+
+        public bool TDUHResponse(List<string> msgBody, FirestoreDb db, string docId)
+        {
+            try
+            {
+                Mode = msgBody[0];
+                From = DateTime.ParseExact(msgBody[1], "yyMMddHHmm", null);
+                To = DateTime.ParseExact(msgBody[2], "yyMMddHHmm", null).AddSeconds(1);
+
+                var expdate = DateTime.Now.Date.AddDays(-30);
+                if (From < expdate && To > expdate)
+                {
+                    From = expdate;
+                }
+                else if (From < expdate && To < expdate) return false;
+            }
+            catch
+            {
+                return false;
+            }
+
+            tduh.Mode = Mode;
+            tduh.AddTDUHData(From, To, db, docId);
+
+            return true;
+        }
+
+
+        public async void AddFirestoreField(FirestoreDb db, string docID)
+        {
+            using var workOfSetting = factorySetting.Create();
+            var setting = workOfSetting.Repo.GetFirst();
+
+            var knexusServiceKey = $"GC{setting.CompanyCode}B{setting.CompanyRegistrationCode}";
+
+            var collectionReference = db!.Collection("gateways").Document(knexusServiceKey).Collection("gproto").Document(docID);
+
+            var data = new Dictionary<string, object>
+            {
+                {"Id", docID},
+                {"ChimneyCode", setting.ChimneyCode}
+            };
+            try
+            {
+                await collectionReference.SetAsync(data);
+            }
+            catch { }
+        }
+    }
+}
