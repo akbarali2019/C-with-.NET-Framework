@@ -1,0 +1,15 @@
+public DocumentReference GetTDAHReference(FirestoreDb db, string path, string docID)
+{
+    using var workOfSetting = factorySetting.Create();
+    var setting = workOfSetting.Repo.GetFirst();
+
+    var knexusServiceKey = $"GC{setting.CompanyCode}B{setting.CompanyRegistrationCode}";
+
+    var collectionReference = db!.Collection("gateways").Document(knexusServiceKey);
+
+    if (docID != null) collectionReference = collectionReference.Collection("gproto").Document(docID).Collection(path).Document();
+    else collectionReference = collectionReference.Collection("chimneys").Document(setting.ChimneyCode).Collection(path).Document();
+
+    return collectionReference;
+
+}
