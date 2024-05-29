@@ -1,0 +1,195 @@
+0-openjdk-headless-1.7.0.321-2.6.28.2.amzn2.0.2.x86_64                          4/5
+  Erasing    : javapackages-tools-3.4.1-11.amzn2.noarch                                                   5/5
+  Verifying  : 1:java-1.7.0-openjdk-1.7.0.321-2.6.28.2.amzn2.0.2.x86_64                                   1/5
+  Verifying  : 1:java-1.7.0-openjdk-headless-1.7.0.321-2.6.28.2.amzn2.0.2.x86_64                          2/5
+  Verifying  : 1:java-1.8.0-openjdk-1.8.0.412.b08-1.amzn2.0.1.x86_64                                      3/5
+  Verifying  : 1:java-1.8.0-openjdk-headless-1.8.0.412.b08-1.amzn2.0.1.x86_64                             4/5
+  Verifying  : javapackages-tools-3.4.1-11.amzn2.noarch                                                   5/5
+
+Removed:
+  java-1.7.0-openjdk.x86_64 1:1.7.0.321-2.6.28.2.amzn2.0.2
+  java-1.7.0-openjdk-headless.x86_64 1:1.7.0.321-2.6.28.2.amzn2.0.2
+  java-1.8.0-openjdk.x86_64 1:1.8.0.412.b08-1.amzn2.0.1
+  java-1.8.0-openjdk-headless.x86_64 1:1.8.0.412.b08-1.amzn2.0.1
+  javapackages-tools.noarch 0:3.4.1-11.amzn2
+
+Complete!
+[root@ip-172-31-35-63 ~]# java -version
+version
+-bash: /bin/java: No such file or directory
+[root@ip-172-31-35-63 ~]# clear
+[root@ip-172-31-35-63 ~]# yum list java*
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Available Packages
+java-1.7.0-openjdk.x86_64                                1:1.7.0.321-2.6.28.2.amzn2.0.2             amzn2-core
+java-1.7.0-openjdk-accessibility.x86_64                  1:1.7.0.321-2.6.28.2.amzn2.0.2             amzn2-core
+java-1.7.0-openjdk-demo.x86_64                           1:1.7.0.321-2.6.28.2.amzn2.0.2             amzn2-core
+java-1.7.0-openjdk-devel.x86_64                          1:1.7.0.321-2.6.28.2.amzn2.0.2             amzn2-core
+java-1.7.0-openjdk-headless.x86_64                       1:1.7.0.321-2.6.28.2.amzn2.0.2             amzn2-core
+java-1.7.0-openjdk-javadoc.noarch                        1:1.7.0.321-2.6.28.2.amzn2.0.2             amzn2-core
+java-1.7.0-openjdk-src.x86_64                            1:1.7.0.321-2.6.28.2.amzn2.0.2             amzn2-core
+java-1.8.0-openjdk.x86_64                                1:1.8.0.412.b08-1.amzn2.0.1                amzn2-core
+java-1.8.0-openjdk-accessibility.x86_64                  1:1.8.0.412.b08-1.amzn2.0.1                amzn2-core
+java-1.8.0-openjdk-accessibility-debug.x86_64            1:1.8.0.412.b08-1.amzn2.0.1                amzn2-core
+java-1.8.0-openjdk-debug.x86_64                          1:1.8.0.412.b08-1.amzn2.0.1                amzn2-core
+java-1.8.0-openjdk-demo.x86_64                           1:1.8.0.412.b08-1.amzn2.0.1                amzn2-core
+java-1.8.0-openjdk-demo-debug.x86_64                     1:1.8.0.412.b08-1.amzn2.0.1                amzn2-core
+java-1.8.0-openjdk-devel.x86_64                          1:1.8.0.412.b08-1.amzn2.0.1                amzn2-core
+java-1.8.0-openjdk-devel-debug.x86_64                    1:1.8.0.412.b08-1.amzn2.0.1                amzn2-core
+java-1.8.0-openjdk-headless.x86_64                       1:1.8.0.412.b08-1.amzn2.0.1                amzn2-core
+java-1.8.0-openjdk-headless-debug.x86_64                 1:1.8.0.412.b08-1.amzn2.0.1                amzn2-core
+java-1.8.0-openjdk-javadoc.noarch                        1:1.8.0.412.b08-1.amzn2.0.1                amzn2-core
+java-1.8.0-openjdk-javadoc-debug.noarch                  1:1.8.0.412.b08-1.amzn2.0.1                amzn2-core
+java-1.8.0-openjdk-javadoc-zip.noarch                    1:1.8.0.412.b08-1.amzn2.0.1                amzn2-core
+java-1.8.0-openjdk-javadoc-zip-debug.noarch              1:1.8.0.412.b08-1.amzn2.0.1                amzn2-core
+java-1.8.0-openjdk-src.x86_64                            1:1.8.0.412.b08-1.amzn2.0.1                amzn2-core
+java-1.8.0-openjdk-src-debug.x86_64                      1:1.8.0.412.b08-1.amzn2.0.1                amzn2-core
+java-11-amazon-corretto.x86_64                           1:11.0.23+9-1.amzn2                        amzn2-core
+java-11-amazon-corretto-headless.x86_64                  1:11.0.23+9-1.amzn2                        amzn2-core
+java-11-amazon-corretto-javadoc.x86_64                   1:11.0.23+9-1.amzn2                        amzn2-core
+java-17-amazon-corretto.x86_64                           1:17.0.11+9-1.amzn2.1                      amzn2-core
+java-17-amazon-corretto-devel.x86_64                     1:17.0.11+9-1.amzn2.1                      amzn2-core
+java-17-amazon-corretto-headless.x86_64                  1:17.0.11+9-1.amzn2.1                      amzn2-core
+java-17-amazon-corretto-javadoc.x86_64                   1:17.0.11+9-1.amzn2.1                      amzn2-core
+java-17-amazon-corretto-jmods.x86_64                     1:17.0.11+9-1.amzn2.1                      amzn2-core
+java-atk-wrapper.x86_64                                  0.30.4-5.amzn2.0.2                         amzn2-core
+java_cup.noarch                                          1:0.11a-16.1.amzn2                         amzn2-core
+java_cup-javadoc.noarch                                  1:0.11a-16.1.amzn2                         amzn2-core
+java_cup-manual.noarch                                   1:0.11a-16.1.amzn2                         amzn2-core
+javacc.noarch                                            5.0-10.1.amzn2                             amzn2-core
+javacc-demo.noarch                                       5.0-10.1.amzn2                             amzn2-core
+javacc-javadoc.noarch                                    5.0-10.1.amzn2                             amzn2-core
+javacc-manual.noarch                                     5.0-10.1.amzn2                             amzn2-core
+javacc-maven-plugin.noarch                               2.6-17.amzn2                               amzn2-core
+javacc-maven-plugin-javadoc.noarch                       2.6-17.amzn2                               amzn2-core
+javamail.noarch                                          1.4.6-8.amzn2                              amzn2-core
+javamail-javadoc.noarch                                  1.4.6-8.amzn2                              amzn2-core
+javapackages-tools.noarch                                3.4.1-11.amzn2                             amzn2-core
+javassist.noarch                                         3.16.1-10.amzn2                            amzn2-core
+javassist-javadoc.noarch                                 3.16.1-10.amzn2                            amzn2-core
+[root@ip-172-31-35-63 ~]# ^C
+[root@ip-172-31-35-63 ~]# sudo yum install e
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+No package e available.
+Error: Nothing to do
+[root@ip-172-31-35-63 ~]# java-17-amazon-corretto.x86_64 e
+-bash: java-17-amazon-corretto.x86_64: command not found
+[root@ip-172-31-35-63 ~]# sudo yum install java-17-amazon-corretto.x86_64
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package java-17-amazon-corretto.x86_64 1:17.0.11+9-1.amzn2.1 will be installed
+--> Processing Dependency: java-17-amazon-corretto-headless(x86-64) = 1:17.0.11+9-1.amzn2.1 for package: 1:java-17-amazon-corretto-17.0.11+9-1.amzn2.1.x86_64
+--> Processing Dependency: libXt for package: 1:java-17-amazon-corretto-17.0.11+9-1.amzn2.1.x86_64
+--> Running transaction check
+---> Package java-17-amazon-corretto-headless.x86_64 1:17.0.11+9-1.amzn2.1 will be installed
+--> Processing Dependency: jpackage-utils for package: 1:java-17-amazon-corretto-headless-17.0.11+9-1.amzn2.1.x86_64
+--> Processing Dependency: dejavu-serif-fonts for package: 1:java-17-amazon-corretto-headless-17.0.11+9-1.amzn2.1.x86_64
+--> Processing Dependency: dejavu-sans-mono-fonts for package: 1:java-17-amazon-corretto-headless-17.0.11+9-1.amzn2.1.x86_64
+---> Package libXt.x86_64 0:1.1.5-3.amzn2.0.2 will be installed
+--> Running transaction check
+---> Package dejavu-sans-mono-fonts.noarch 0:2.33-6.amzn2 will be installed
+---> Package dejavu-serif-fonts.noarch 0:2.33-6.amzn2 will be installed
+---> Package javapackages-tools.noarch 0:3.4.1-11.amzn2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+==============================================================================================================
+ Package                                 Arch          Version                        Repository         Size
+==============================================================================================================
+Installing:
+ java-17-amazon-corretto                 x86_64        1:17.0.11+9-1.amzn2.1          amzn2-core        175 k
+Installing for dependencies:
+ dejavu-sans-mono-fonts                  noarch        2.33-6.amzn2                   amzn2-core        433 k
+ dejavu-serif-fonts                      noarch        2.33-6.amzn2                   amzn2-core        777 k
+ java-17-amazon-corretto-headless        x86_64        1:17.0.11+9-1.amzn2.1          amzn2-core         94 M
+ javapackages-tools                      noarch        3.4.1-11.amzn2                 amzn2-core         73 k
+ libXt                                   x86_64        1.1.5-3.amzn2.0.2              amzn2-core        177 k
+
+Transaction Summary
+==============================================================================================================
+Install  1 Package (+5 Dependent packages)
+
+Total download size: 96 M
+Installed size: 242 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/6): dejavu-serif-fonts-2.33-6.amzn2.noarch.rpm                                      | 777 kB  00:00:00
+(2/6): dejavu-sans-mono-fonts-2.33-6.amzn2.noarch.rpm                                  | 433 kB  00:00:00
+(3/6): java-17-amazon-corretto-17.0.11+9-1.amzn2.1.x86_64.rpm                          | 175 kB  00:00:00
+(4/6): javapackages-tools-3.4.1-11.amzn2.noarch.rpm                                    |  73 kB  00:00:00
+(5/6): libXt-1.1.5-3.amzn2.0.2.x86_64.rpm                                              | 177 kB  00:00:00
+(6/6): java-17-amazon-corretto-headless-17.0.11+9-1.amzn2.1.x86_64.rpm                 |  94 MB  00:00:01
+--------------------------------------------------------------------------------------------------------------
+Total                                                                          66 MB/s |  96 MB  00:00:01
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : javapackages-tools-3.4.1-11.amzn2.noarch                                                   1/6
+  Installing : dejavu-sans-mono-fonts-2.33-6.amzn2.noarch                                                 2/6
+  Installing : libXt-1.1.5-3.amzn2.0.2.x86_64                                                             3/6
+  Installing : dejavu-serif-fonts-2.33-6.amzn2.noarch                                                     4/6
+  Installing : 1:java-17-amazon-corretto-headless-17.0.11+9-1.amzn2.1.x86_64                              5/6
+  Installing : 1:java-17-amazon-corretto-17.0.11+9-1.amzn2.1.x86_64                                       6/6
+  Verifying  : 1:java-17-amazon-corretto-17.0.11+9-1.amzn2.1.x86_64                                       1/6
+  Verifying  : 1:java-17-amazon-corretto-headless-17.0.11+9-1.amzn2.1.x86_64                              2/6
+  Verifying  : dejavu-serif-fonts-2.33-6.amzn2.noarch                                                     3/6
+  Verifying  : libXt-1.1.5-3.amzn2.0.2.x86_64                                                             4/6
+  Verifying  : dejavu-sans-mono-fonts-2.33-6.amzn2.noarch                                                 5/6
+  Verifying  : javapackages-tools-3.4.1-11.amzn2.noarch                                                   6/6
+
+Installed:
+  java-17-amazon-corretto.x86_64 1:17.0.11+9-1.amzn2.1
+
+Dependency Installed:
+  dejavu-sans-mono-fonts.noarch 0:2.33-6.amzn2                    dejavu-serif-fonts.noarch 0:2.33-6.amzn2
+  java-17-amazon-corretto-headless.x86_64 1:17.0.11+9-1.amzn2.1   javapackages-tools.noarch 0:3.4.1-11.amzn2
+  libXt.x86_64 0:1.1.5-3.amzn2.0.2
+
+Complete!
+[root@ip-172-31-35-63 ~]# java -version
+java -version
+openjdk version "17.0.11" 2024-04-16 LTS
+OpenJDK Runtime Environment Corretto-17.0.11.9.1 (build 17.0.11+9-LTS)
+OpenJDK 64-Bit Server VM Corretto-17.0.11.9.1 (build 17.0.11+9-LTS, mixed mode, sharing)
+[root@ip-172-31-35-63 ~]# ls
+demo-0.0.1-SNAPSHOT.jar
+[root@ip-172-31-35-63 ~]# java -jar demo-0.0.1-SNAPSHOT.jar
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2024-05-29T07:25:57.527Z  INFO 18277 --- [demo] [           main] com.example.demo.DemoApplication         : Starting DemoApplication v0.0.1-SNAPSHOT using Java 17.0.11 with PID 18277 (/root/demo-0.0.1-SNAPSHOT.jar started by root in /root)
+2024-05-29T07:25:57.539Z  INFO 18277 --- [demo] [           main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-05-29T07:26:00.499Z  INFO 18277 --- [demo] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-29T07:26:00.528Z  INFO 18277 --- [demo] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-29T07:26:00.536Z  INFO 18277 --- [demo] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-29T07:26:00.794Z  INFO 18277 --- [demo] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-29T07:26:00.800Z  INFO 18277 --- [demo] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3123 ms
+2024-05-29T07:26:02.204Z  INFO 18277 --- [demo] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-05-29T07:26:02.248Z  INFO 18277 --- [demo] [           main] com.example.demo.DemoApplication         : Started DemoApplication in 5.803 seconds (process running for 7.136)
+2024-05-29T07:27:43.595Z  INFO 18277 --- [demo] [nio-8080-exec-1] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xf90x010x000x060xf50x030x030xab0x170xb90xc5S0xd50x98f0xbd0xef0xcd7S0xa70xcd0xa9d0x050xbd0xfd0x9c60xd5Z0xe5C0xfc0x950x9a0x9f0x89< ]. HTTP method names must be tokens
+        at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-10.1.24.jar!/:na]
+        at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262) ~[tomcat-embed-core-10.1.24.jar!/:na]
+        at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar!/:na]
+        at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar!/:na]
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar!/:na]
+        at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar!/:na]
+        at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar!/:na]
+        at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar!/:na]
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar!/:na]
+        at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-05-29T07:27:44.214Z  INFO 18277 --- [demo] [nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-29T07:27:44.217Z  INFO 18277 --- [demo] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-29T07:27:44.219Z  INFO 18277 --- [demo] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
