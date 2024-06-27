@@ -22,6 +22,41 @@ namespace EnumsAndSwitch
                 new ToDo {Description = "Task8", EstimatedHours = 8, Status = Status.NotStarted}
                 */
 
+                /*
+                new ToDo {Description = "Task1", EstimatedHours = 6, Status = Status.Completed},
+                new ToDo {Description = "Task2", EstimatedHours = 2, Status = Status.InProgress},
+                new ToDo {Description = "Task3", EstimatedHours = 8, Status = Status.NotStarted},
+                new ToDo {Description = "Task4", EstimatedHours = 12, Status = Status.Deleted},
+                new ToDo {Description = "Task5", EstimatedHours = 6, Status = Status.InProgress},
+                new ToDo {Description = "Task6", EstimatedHours = 2, Status = Status.Completed},
+                new ToDo {Description = "Task7", EstimatedHours = 14, Status = Status.OnHold},
+                new ToDo {Description = "Task8", EstimatedHours = 8, Status = Status.NotStarted}
+                */
+
+
+                /*
+                new ToDo {Description = "Task1", EstimatedHours = 6, Status = Status.Completed},
+                new ToDo {Description = "Task2", EstimatedHours = 2, Status = Status.InProgress},
+                new ToDo {Description = "Task3", EstimatedHours = 8, Status = Status.NotStarted},
+                new ToDo {Description = "Task4", EstimatedHours = 12, Status = Status.Deleted},
+                new ToDo {Description = "Task5", EstimatedHours = 6, Status = Status.InProgress},
+                new ToDo {Description = "Task6", EstimatedHours = 2, Status = Status.Completed},
+                new ToDo {Description = "Task7", EstimatedHours = 14, Status = Status.OnHold},
+                new ToDo {Description = "Task8", EstimatedHours = 8, Status = Status.NotStarted}
+                */
+
+
+                /*
+                new ToDo {Description = "Task1", EstimatedHours = 6, Status = Status.Completed},
+                new ToDo {Description = "Task2", EstimatedHours = 2, Status = Status.InProgress},
+                new ToDo {Description = "Task3", EstimatedHours = 8, Status = Status.NotStarted},
+                new ToDo {Description = "Task4", EstimatedHours = 12, Status = Status.Deleted},
+                new ToDo {Description = "Task5", EstimatedHours = 6, Status = Status.InProgress},
+                new ToDo {Description = "Task6", EstimatedHours = 2, Status = Status.Completed},
+                new ToDo {Description = "Task7", EstimatedHours = 14, Status = Status.OnHold},
+                new ToDo {Description = "Task8", EstimatedHours = 8, Status = Status.NotStarted}
+                */
+
                 new ToDo {Status = Status.Completed},
                 new ToDo {Status = Status.InProgress},
                 new ToDo {Status = Status.NotStarted},
