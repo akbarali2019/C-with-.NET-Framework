@@ -110,6 +110,13 @@ namespace EnumsAndSwitch
         public Status Status { get; set; }
     }
 
+    //class ToDo
+    //{
+        //public string Owner { get; set; }
+        //public int TargetNumebr { get; set; }
+        //public Status Status { get; set; }
+    //}
+
     enum Status
     {
         NotStarted,
