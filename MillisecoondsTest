@@ -1,0 +1,58 @@
+using System;
+using System.IO;
+using System.Threading.Tasks;
+
+public class Program
+{
+    private System.Timers.Timer _timer;
+    private DateTime _simulatedTime;
+    private const int TestDurationInSeconds = 10; // Simulate for 10 seconds for testing
+    private const int TimerInterval = 50; // 50 milliseconds interval for faster simulation
+    private StreamWriter _logWriter;
+
+    public Program()
+    {
+        _timer = new System.Timers.Timer();
+        _timer.AutoReset = false;
+        _timer.Elapsed += OnTimerElapsed;
+        _simulatedTime = DateTime.Now;
+        _logWriter = new StreamWriter("log.txt");
+
+        StartTimer();
+    }
+    public static void Main()
+    {
+        new Program();
+        Console.ReadLine();
+    }
+
+    private void OnTimerElapsed(object? sender, System.Timers.ElapsedEventArgs e)
+    {
+        _simulatedTime = _simulatedTime.AddMilliseconds(TimerInterval);
+        CheckMilliseconds(_simulatedTime);
+
+        if ((_simulatedTime - DateTime.Now).TotalSeconds < TestDurationInSeconds)
+        {
+            _timer.Interval = TimerInterval;
+            _timer.Start();
+        }
+        else
+        {
+            _logWriter.Close();
+        }
+    }
+
+    private void StartTimer()
+    {
+        _timer.Interval = TimerInterval;
+        _timer.Start();
+    }
+
+    public void CheckMilliseconds(DateTime now)
+    {
+        var milliseconds = now.Millisecond;
+        var logMessage = $"MINUTE:SECOND:MILLISECOND | {now.Minute}:{now.Second}:{milliseconds}";
+        _logWriter.WriteLine(logMessage);
+        Console.WriteLine(logMessage);
+    }
+}
