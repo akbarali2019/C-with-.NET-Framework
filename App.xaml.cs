@@ -16,7 +16,7 @@ namespace Sqlite_CRUD
         
         protected override void OnStartup(StartupEventArgs e)
         {
-
+            //...Db Management extension logic is needed to be added
             DatabaseFacade facade = new DatabaseFacade(new DataContext());
             facade.EnsureCreated();
             
