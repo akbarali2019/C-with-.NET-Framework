@@ -69,5 +69,13 @@ namespace ConsoleApp1
                 Console.WriteLine("Here is my another Logger...");
             }
         }
+
+        class NLogger : ILogger
+        {
+            public void Log()
+            {
+                Console.WriteLine("Here is my NLogger...");
+            }
+        }
     }
 }
