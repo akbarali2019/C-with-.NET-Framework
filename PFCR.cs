@@ -13,6 +13,13 @@ public bool HandleRequest(int chimidForSelection, List<string> body)
             using var itemWork = factoryItem.Create();
             var targets = itemWork.Repo.GetAll()
                 .Where(j => j.ChimIdForKey == sendByChimId && j.FullFacilityCode == key);
+
+
+            //var updateRelations = itemWork.Repo.GetAll()
+            //Where(j.FullFacilityCode == value);
+
+            //updated to only include the item that is under the requested chimneyId,
+            //because there may be the same numbered items in the system but under the different chimneyNumbers
             var updateRelations = itemWork.Repo.GetAll()
                 .Where(j => j.ChimIdForKey == sendByChimId && j.FullFacilityCode == value);
 
