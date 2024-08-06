@@ -22,5 +22,10 @@ namespace Giraffe
         {
             Console.WriteLine("The Chef makes cake");
         }
+
+        public virtual void Serve()
+        {
+            Console.WriteLine("The Chef does not Serve!");
+        }
     }
 }
