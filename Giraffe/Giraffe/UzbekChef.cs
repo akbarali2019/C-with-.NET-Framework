@@ -17,5 +17,10 @@ namespace Giraffe
         {
             Console.WriteLine("The Chef makes Palov");
         }
+
+         public override void Serve()
+        {
+            Console.WriteLine("The Chef does not serve!");
+        }
     }
 }
