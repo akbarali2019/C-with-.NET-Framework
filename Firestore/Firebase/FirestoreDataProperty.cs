@@ -55,5 +55,18 @@ namespace Firestore.Firebase
             OprState = data.OprState,
             PFState = data.PFState,
         };
+
+        
+        //This daily data is going to be expected to be sent users to notify about daily data in the form of HafData   
+        //public static FirestoreDataProperty DailyData(HalfHourSend data) => new ()
+        //{
+            //FacilityCode = data.FacilityCode,
+            //ItemCode = data.ItemCode!,
+            //ItemId = data.ItemId!,
+            //RptValue = data.RptValue,
+            //RptState = data.RptState,
+            //OprState = data.OprState,
+            //PFState = data.PFState,
+        //};
     }
 }
