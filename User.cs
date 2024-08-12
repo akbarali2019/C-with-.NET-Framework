@@ -12,5 +12,11 @@ namespace Sqlite_CRUD
         public string Address { get; set; }
 
         public string Age { get; set; }
+
+        // Add to manage users' role
+        public string RoleAsUser { get; set; }
+        
+        // Add to manage users status update
+        public bool ActiveStatus { get; set; } = true;
     }
 }
