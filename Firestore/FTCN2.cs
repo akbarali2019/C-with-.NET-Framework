@@ -40,6 +40,16 @@ namespace Firestore.GatewayProtos
             return collectionReference;
         }
 
+        // a temporary refernce for Firestore TCN2 Proto to test communication with GW
+        public static DocumentReference GetTempReference(Setting setting, FirestoreDb db)
+        {
+            var knexusServiceKey = $"GC{setting.CompanyCode}B{setting.CompanyRegistrationCode}";
+            var collectionReference = db
+                .Collection("gateways").Document(knexusServiceKey)
+                .Collection("Test-GProto").Document();
+            return collectionReference;
+        }
+
         public static FTCN2 MapFTCN2Data(Setting setting, Target target, List<ItemDetail> itemDetail, Password password) 
         {
 
