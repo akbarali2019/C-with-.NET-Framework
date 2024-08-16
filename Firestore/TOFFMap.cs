@@ -146,6 +146,20 @@ namespace Firestore.AutoSendProtos
             return collectionReference;
         }
 
+
+        // to test toff data tranformation we generated a new path "test-offData" 
+        // inside "tests" collection of the "gw-tests" collection
+        public static DocumentReference GetTestReference(Setting setting, FirestoreDb db)
+        {
+            var knexusServiceKey = $"GC{setting.CompanyCode}B{setting.CompanyRegistrationCode}";
+            var collectionReference = db
+                .Collection("gw-tests").Document(knexusServiceKey)
+                .Collection("tests").Document(setting.ChimneyCode)
+                .Collection("test-offData").Document();
+
+            return collectionReference;
+        }
+        
         private void UpdateSentValues(List<DateTime> offDates)
         {
             foreach (var date in offDates)
