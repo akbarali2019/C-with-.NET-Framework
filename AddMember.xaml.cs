@@ -21,6 +21,7 @@ namespace Sqlite_CRUD
     {
         
         public List<User> DatabaseUsers { get; private set; }
+        //public List<UserAsAdmin> DatabaseUserAsAdmin { get; private set; }
         
         public AddMember()
         {
