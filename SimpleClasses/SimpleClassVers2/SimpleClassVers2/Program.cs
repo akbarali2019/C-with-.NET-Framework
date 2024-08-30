@@ -6,6 +6,7 @@ namespace SimpleClassVers2
     {
         static void Main(string[] args)
         {
+            //new Person object
             Person person = new Person();
 
             person.Age = 26;
