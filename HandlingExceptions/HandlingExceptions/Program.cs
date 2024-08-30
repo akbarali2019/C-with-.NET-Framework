@@ -7,7 +7,8 @@ namespace HandlingExceptions
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World!");
+            //intented exception
+            RConsole.WriteLine("Hello World!");
 
             try
             {
