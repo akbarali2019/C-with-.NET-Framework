@@ -12,6 +12,9 @@
 // License for the specific language governing permissions and limitations under
 // the License.
 
+// Korea Environment Facility & Analysis, 2023~2024 KEFA Corp
+// Akbarali Otakhanov
+
 using CommandLine;
 using Google.Cloud.Firestore;
 using System;
