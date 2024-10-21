@@ -18,5 +18,7 @@ namespace Sqlite_CRUD
 
         public DbSet<User> Users { get; set; }
 
+        // public DbSet<RegisteredUser> RegisteredUsers { get; set; }
+
     }
 }
