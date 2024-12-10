@@ -32,5 +32,8 @@ namespace Firestore.FirestoreHelper
         [FirestoreProperty]
         public string? Type { get; set; }
 
+        [FirestoreProperty]
+        public string? Status { get; set; }
+
     }
 }
