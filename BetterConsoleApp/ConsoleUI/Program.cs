@@ -6,7 +6,7 @@ using System;
 
 
 //DependencyInjection, Serilog-Logging, Settings
-
+//2024-12-24 finish of the year and console updates
 namespace ConsoleUI
 {
     class Program
