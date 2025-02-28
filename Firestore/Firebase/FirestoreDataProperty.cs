@@ -68,5 +68,8 @@ namespace Firestore.Firebase
             //OprState = data.OprState,
             //PFState = data.PFState,
         //};
+
+        // Visibility Changes "current sensors"
+        // OpVisability = VisibleItemCodes.Contains(item.ItemCode!) ? "Visible" : "Hidden"
     }
 }
