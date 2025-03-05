@@ -43,3 +43,24 @@ public void UpdateFacilityNumber(int num, ItemDetail item)
     NotifyChangeToServer((int)item.ChimIdForKey!);
     
 }
+
+
+    public void UpdateItemType(string type, ItemDetail item)
+    {
+        using var typeWork = factoryItemType.Create();
+        var selectedType = typeWork.Repo.Where(t => t.code == type).First();
+
+        if (selectedType.isMain)
+        {
+            using var itemWork = factoryItem.Create();
+            var itemTarget = itemWork.Repo.GetById(item.Id);
+            itemTarget.ItemCode = selectedType.code;
+            itemTarget.ItemMinRange = selectedType.min;
+            itemTarget.ItemMaxRange = selectedType.max;
+            itemTarget.IsAlter = false;                      // new
+            itemWork.Repo.Update(itemTarget);
+            itemWork.Complete();
+        }
+        NotifyChangeToServer();
+        
+    }
